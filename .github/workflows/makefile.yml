@@ -6,17 +6,17 @@ on:
   pull_request:
     branches: [ "master" ]
   workflow_dispatch:
-      # Inputs the workflow accepts.
-      inputs:
-        name: 'Build'
-          # Friendly description to be shown in the UI instead of 'name'
-          description: 'Build FMCB'
-          # Default value if no value is explicitly provided
-          default: 'ok'
-          # Input has to be provided for the workflow to run
-          required: false
-          # The data type of the input
-          type: string
+    # Inputs the workflow accepts.
+    inputs:
+      name: 'Build'
+        # Friendly description to be shown in the UI instead of 'name'
+        description: 'Build FMCB'
+        # Default value if no value is explicitly provided
+        default: 'ok'
+        # Input has to be provided for the workflow to run
+        required: false
+        # The data type of the input
+        type: string
 jobs:
   build:
 
